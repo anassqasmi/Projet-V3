@@ -2,7 +2,6 @@
 	if (isset($_SESSION['unom']))
   	{
 		session_start();
-		
   		echo '<script type="text/javascript">'
   			, 'document.location.replace("View/Accueil.php");'
   			, '</script>';

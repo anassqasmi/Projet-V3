@@ -1,7 +1,13 @@
 <?php 
-session_start();
+
+	if (!isset($_SESSION))
+	{
+		session_start();
+	}
+
   if (($_SESSION['utype'] == 'etudiant'))	
   {
+  	
   	echo '<script type="text/javascript">'
   			, 'document.location.replace("../View/espaceEtudiant.php");'
   			, '</script>';
