@@ -699,6 +699,20 @@ function readGroups() {
 	$_SESSION['GroupeTab'] = $t;
 }
 
+function readGroups2() {
+	$xml = simplexml_load_file ( "Ressources/Groupes2.xml" ) or die ( "Error: Cannot create object" );
+	$i = 0;
+	foreach ( $xml->children () as $tache ) {
+		$tmp[0] = $tache->attributes();
+		$tmp[1] = $tache->nom;
+		$tmp[2] = $tache->GID;
+		$tmp[3] = $tache->UID;
+		$t[$i] = $tmp;
+		$i = $i + 1;
+	}
+	return 'ok';
+}
+
 function addG($nom, $UID) {
 	
 	$xmldoc = new DomDocument ( '1.0' );
