@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taches>
+  <tache id="5">
+    <date>2016-01-19</date>
+    <contenu>amin anass tache</contenu>
+    <categorie>td</categorie>
+    <tag>tag1</tag>
+    <cible>1000</cible>
+    <statu>0</statu>
+  </tache>
+  <tache id="4">
+    <date>2016-01-14</date>
+    <contenu>my tache</contenu>
+    <categorie>td</categorie>
+    <tag>tag1</tag>
+    <cible>1000</cible>
+    <statu>2</statu>
+  </tache>
+  <tache id="3">
+    <date>2016-01-13</date>
+    <contenu>kamal</contenu>
+    <categorie>exercice</categorie>
+    <tag>tag2</tag>
+    <cible>6</cible>
+    <statu>1</statu>
+  </tache>
+  <tache id="1">
+    <date>2016-01-22</date>
+    <contenu>first tache</contenu>
+    <categorie>quiz</categorie>
+    <tag>tag2</tag>
+    <cible>4</cible>
+    <statu>0</statu>
+  </tache>
+</taches>

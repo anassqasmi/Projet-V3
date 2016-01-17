@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<users>
+  <user id="2">
+    <name>anassoo</name>
+    <prenom>qasmi</prenom>
+    <passwd>1234</passwd>
+    <email>anass@gmail.com</email>
+    <typedecompte>etudiant</typedecompte>
+    <photo>../Ressources/Photo/face.jpg</photo>
+  </user>
+  <user id="6">
+    <name>kamal</name>
+    <prenom>Elbali</prenom>
+    <passwd>1234</passwd>
+    <email>kamal@gmail.com</email>
+    <typedecompte>etudiant</typedecompte>
+    <photo>../Ressources/Photo/face.jpg</photo>
+  </user>
+  <user id="5">
+    <name>admin</name>
+    <prenom>admin</prenom>
+    <passwd>1234</passwd>
+    <email>admin@gmail.com</email>
+    <typedecompte>admin</typedecompte>
+    <photo>../Ressources/Photo/face.jpg</photo>
+  </user>
+  <user id="4">
+    <name>amin</name>
+    <prenom>bennis</prenom>
+    <passwd>1234</passwd>
+    <email>amine@gmail.com</email>
+    <typedecompte>etudiant</typedecompte>
+    <photo>../Ressources/Photo/face.jpg</photo>
+  </user>
+  <user id="1">
+    <name>yassin</name>
+    <prenom>boukaibat</prenom>
+    <passwd>1234</passwd>
+    <email>yassin@gmail.com</email>
+    <typedecompte>etudiant</typedecompte>
+    <photo>../Ressources/Photo/face.jpg</photo>
+  </user>
+</users>
