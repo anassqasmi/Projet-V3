@@ -700,7 +700,7 @@ function readGroups() {
 }
 
 function readGroups2() {
-	$xml = simplexml_load_file ( "Ressources/Groupes2.xml" ) or die ( "Error: Cannot create object" );
+	$xml = simplexml_load_file ( "Ressourcess/Groupes2.xml" ) or die ( "Error: Cannot create object" );
 	$i = 0;
 	foreach ( $xml->children () as $tache ) {
 		$tmp[0] = $tache->attributes();
