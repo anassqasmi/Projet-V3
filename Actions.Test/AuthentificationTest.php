@@ -4,7 +4,7 @@ require 'Actions/Authentification.php';
 		
 require 'Controlor/MainControlor.php';
 
-
+//test class
 class StackTest extends PHPUnit_Framework_TestCase
 {
 	
