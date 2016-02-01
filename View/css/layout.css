@@ -4,6 +4,34 @@ html, div, map, dt, isindex, form, header, aside, section, section, article, foo
     display: block;  
 } 
 
+.buttonE {
+    background: #428BCA;
+    color: #fff;
+    font-family: Sans-serif;
+    font-size: 10px;
+    height: 20px;
+    width: 50px;
+    line-height: 20px;
+    margin: 5px 5px;
+    text-align: center;
+    border: 0;
+    transition: all 0.3s ease 0s;
+}
+
+buttonE {
+    background: #428BCA;
+    color: #fff;
+    font-family: Sans-serif;
+    font-size: 10px;
+    height: 20px;
+    width: 50px;
+    line-height: 20px;
+    margin: 5px 5px;
+    text-align: center;
+    border: 0;
+    transition: all 0.3s ease 0s;
+}
+
 html, body {
 height: 100%;
 margin: 0;

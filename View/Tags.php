@@ -107,16 +107,16 @@ function modCat()
 
 		<article class="module width_full">
 			<header>
-				<h3 class="tabs_involved">Taches Manager</h3>
+				<h3 class="tabs_involved"><?php echo gettext("Marque");?></h3>
 				<ul class="tabs">
-					<li><a href="#tab2" onclick="test()">Nouvelle tache +</a></li>
+					<li><a href="#tab2" onclick="test()"><?php echo gettext("Ajouter_Marque");?></a></li>
 				</ul>
 			</header>
 			<div class="module_content">
 				<div id="sel">
 					<fieldset style="width: 100%; float: left; margin-right: 3%;">
 						<!-- to make two field float next to one another, adjust values accordingly -->
-						<label>Tags : </label>
+						<label><?php echo gettext("Marque");?> : </label>
 
 						<table border="0" style="width: 100%">
 							<tr>
@@ -141,7 +141,7 @@ function modCat()
 				</div>
 				<div id="cat">
 					<fieldset>
-						<label>tags : </label>
+						<label><?php echo gettext("Marque");?> : </label>
 						<form id="formCat"
 							action="../Controlor/MainControlor.php?fun=addTag"
 							method="post">
@@ -154,7 +154,7 @@ function modCat()
 			</div>
 			<footer>
 				<div class="submit_link" id="aj">
-					<input type="submit" value="Ajouter" onclick="Addcat()"
+					<input type="submit" value=<?php echo gettext("Ajouter");?> onclick="Addcat()"
 						class="alt_btn">
 				</div>
 				<div class="submit_link" id="mod">

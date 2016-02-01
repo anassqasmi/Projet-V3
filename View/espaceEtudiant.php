@@ -91,10 +91,10 @@ if (!isset($_SESSION))
 
 		<article class="module width_full">
 		<header>
-			<h3 class="tabs_involved">Taches Manager</h3>
+			<h3 class="tabs_involved"><?php echo gettext("Gestionnaire_des_tâches");?> </h3>
 			<ul class="tabs">
-	   			<li><a href="#tab1">taches en cours </a></li>
-	    		<li><a href="#tab2">taches terminee</a></li>
+	   			<li><a href="#tab1"><?php echo gettext("tâches_en_cours");?> </a></li>
+	    		<li><a href="#tab2"><?php echo gettext("tâches_terminée");?> </a></li>
 			</ul>
 		</header>
 
@@ -104,13 +104,13 @@ if (!isset($_SESSION))
 			<thead> 
 				<tr> 
    					<th></th> 
-    				<th onclick="rectangle();">date</th> 
-    				<th onclick="rectangle();">tache</th> 
-    				<th>Categorie</th> 
-    				<th>tage</th> 
-    				<th>cible</th> 
-    				<th>statut</th> 
-    				<th>Actions</th> 
+    				<th onclick="rectangle();"><?php echo gettext("Date");?></th> 
+    				<th onclick="rectangle();"><?php echo gettext("Tâches");?></th> 
+    				<th><?php echo gettext("Catégories");?></th> 
+    				<th><?php echo gettext("Marque");?></th> 
+    				<th><?php echo gettext("Cible");?></th> 
+    				<th><?php echo gettext("statut");?></th> 
+    				<th><?php echo gettext("Action");?></th> 
 				</tr> 
 			</thead> 
 			<tbody> 
@@ -130,10 +130,10 @@ if (!isset($_SESSION))
     				<td><?php echo $tache[4] ?></td> 
     				<td><?php if($tache[5] != '1000') {echo getUserById($tache[5]); }else{ echo 'Public';} ?></td>
     				<td><?php if($tache[6] == '2') {echo 'en-cours'; }else{ echo 'en attente ';} ?></td> 
-    				<td><input type="button" value="Terminer" onclick="terminerTache(<?php echo $tache[0];?>)">
+    				<td><input type="button" class="buttonE" onclick="terminerTache(<?php echo $tache[0];?>)" value=<?php echo gettext("Terminé");?> >
     				<?php 
     					if($tache[6] . '0' == "00" )
-	    					echo '<input type="button" value="en cours" onclick="encoursTache('. $tache[0] . ')">'
+	    					echo '<input  class="buttonE" type="button" value="' . gettext("En_Cours"). '" onclick="encoursTache('. $tache[0] . ')">'
 	    			?>
 	    			</td> 
 				</tr> 
@@ -147,12 +147,12 @@ if (!isset($_SESSION))
 			<table class="tablesorter" cellspacing="0"> 
 			<thead> 
 				<tr> 
-   					<th></th> 
-    				<th onclick="rectangle();">date</th> 
-    				<th onclick="rectangle();">tache</th> 
-    				<th>Categorie</th> 
-    				<th>tage</th> 
-    				<th>cible</th> 
+   					<th></th>
+    				<th onclick="rectangle();"><?php echo gettext("Date");?></th> 
+    				<th onclick="rectangle();"><?php echo gettext("Tâches");?></th> 
+    				<th><?php echo gettext("Catégories");?></th> 
+    				<th><?php echo gettext("Marque");?></th> 
+    				<th><?php echo gettext("Cible");?></th>
 				</tr> 
 			</thead> 
 			<tbody> 

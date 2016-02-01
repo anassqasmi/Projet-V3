@@ -66,33 +66,33 @@ if (!isset($_SESSION))
 		<div class="clear"></div>
 		
 		<article class="module width_full">
-			<header><h3>Nouvelle tache</h3></header>
+			<header><h3><?php echo gettext("Option");?></h3></header>
 				<div class="module_content">
 				<?php $_GET['val']?>
 				</div>
 				<div class="module_content">
 				<form action="../Controlor/MainControlor.php?fun=opt" method="post">
 						<fieldset>
-							<label>Nom : </label>
+							<label><?php echo gettext("Nom");?> : </label>
 							<input type="text" size="50%" name="nom" value="<?php echo $_SESSION['unom']?>"/>
 						</fieldset>
 						<fieldset>
-							<label>Prenom : </label>
+							<label><?php echo gettext("Prenom");?> : </label>
 							<input type="text" size="50%" name="prenom" value="<?php echo $_SESSION['uprenom']?>"/>
 						</fieldset>
 						<fieldset>
-							<label>Email : </label>
+							<label><?php echo gettext("Email");?> : </label>
 							<input type="text" size="50%" name="email" value="<?php echo $_SESSION['umail']?>"/>
 						</fieldset>
 						<fieldset>
-							<label>Password : </label>
+							<label><?php echo gettext("Mot_de_passe");?> : </label>
 							<input type="password" size="50%" name="pwd1" value="<?php echo $_SESSION['upwd']?>"/>
 						</fieldset>
 						<fieldset>
-							<label>Password : </label>
+							<label><?php echo gettext("Mot_de_passe");?> : </label>
 							<input type="password" size="50%" name="pwd2" value="<?php echo $_SESSION['upwd']?>"/>
 						</fieldset>
-				<input type="submit" value="valider">
+				<input type="submit" value=<?php echo gettext("valider");?>>
 				</form>
 						<div class="clear"></div>
 				</div>

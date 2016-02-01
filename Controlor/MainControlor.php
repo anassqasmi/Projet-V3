@@ -81,9 +81,9 @@ function encoursTaches()
 	if (isset($_GET['id']) && !empty($_GET['id']) )
 	{
 		changerStat($_GET['id'], "encours");
-		echo '<script type="text/javascript">'
-				, 'alert("../Index.php");'
-				, '</script>';
+		//echo '<script type="text/javascript">'
+		//		, 'alert("../Index.php");'
+		//		, '</script>';
 		echo '<script type="text/javascript">'
 				, 'document.location.replace("../View/espaceEtudiant.php");'
 				, '</script>';
@@ -93,9 +93,9 @@ function encoursTaches()
 
 function terminerTache()
 {
-	echo '<script type="text/javascript">'
-			, 'alert(" je fait appel a ter");'
-			, '</script>';
+	//echo '<script type="text/javascript">'
+	//		, 'alert(" je fait appel a ter");'
+	//		, '</script>';
 	if (isset($_GET['id']) && !empty($_GET['id']) )
 	{
 		changerStatu($_GET['id']);

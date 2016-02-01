@@ -109,16 +109,16 @@ function modCat()
 
 		<article class="module width_full">
 			<header>
-				<h3 class="tabs_involved">Categories Manager <?php echo $_SESSION ['wa3'] . "l" ?> </h3>
+				<h3 class="tabs_involved"><?php echo gettext("Gestionnaire_De_Gategories"). ' :';?></h3>
 				<ul class="tabs">
-					<li><a href="#tab2" onclick="test()">Nouvelle Categorie +</a></li>
+					<li><a href="#tab2" onclick="test()"><?php echo gettext("Nouvelle_catégorie");?> +</a></li>
 				</ul>
 			</header>
 			<div class="module_content">
 				<div id="sel">
 					<fieldset style="width: 100%; float: left; margin-right: 3%;">
 						<!-- to make two field float next to one another, adjust values accordingly -->
-						<label>Categorie : </label>
+						<label><?php echo gettext("Catégories"). ' :';?> </label>
 
 						<table border="0" style="width: 100%">
 							<tr>
@@ -143,7 +143,7 @@ function modCat()
 				</div>
 				<div id="cat">
 					<fieldset>
-						<label>Categorie : </label>
+						<label><?php echo gettext("Catégories");?> : </label>
 						<form id="formCat"
 							action="../Controlor/MainControlor.php?fun=addCategorie"
 							method="post">
@@ -156,7 +156,7 @@ function modCat()
 			</div>
 			<footer>
 				<div class="submit_link" id="aj">
-					<input type="submit" value="Ajouter" onclick="Addcat()"
+					<input type="submit" value="<?php echo gettext("Ajouter");?>" onclick="Addcat()"
 						class="alt_btn">
 				</div>
 				<div class="submit_link" id="mod">

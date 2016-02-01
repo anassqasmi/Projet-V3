@@ -3,7 +3,6 @@ if (!isset($_SESSION))
   {
     session_start();
   }
-
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,11 +21,14 @@ if (!isset($_SESSION))
 	<script src="js/jquery.tablesorter.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/jquery.equalHeight.js"></script>
 	<script type="text/javascript">
+
+	
 	$(document).ready(function() 
     	{ 
       	  $(".tablesorter").tablesorter(); 
    	 } 
 	);
+	
 	$(document).ready(function() {
 
 	//When page loads...
@@ -63,10 +65,15 @@ if (!isset($_SESSION))
 		var t = document.getElementById("contenu");
 		document.getElementById('tacheContenu').value = t.value;
 
-		var t = document.getElementById("selectedDate");
-		document.getElementById('laDate').value = t.value;
+		
 		
 		document.getElementById("newFormTache").submit();
+	}
+
+	function Date() {
+		var t = document.getElementById("selectedDate");
+		var timediff = new Date() - t.value;
+		alert(timediff);
 	}
 
 	function vider()
@@ -102,21 +109,21 @@ if (!isset($_SESSION))
 		<div class="clear"></div>
 		
 		<article class="module width_full">
-			<header><h3>Nouvelle tache</h3></header>
+			<header><h3><?php echo gettext("Nouvelle_tâche");?></h3></header>
 				<div class="module_content">
 				
 				</div>
 				<div class="module_content">
 						<fieldset>
-							<label>Date : </label>
-							<input type="date" size="50%" id="selectedDate"/>
+							<label><?php echo gettext("Date");?> : </label>
+							<input type="date" onchange="Date()" size="50%" id="selectedDate"/>
 						</fieldset>
 						<fieldset>
-							<label>Tache : </label>
+							<label><?php echo gettext("Tâches");?> : </label>
 							<textarea rows="12" name="contenu" id="contenu"></textarea>
 						</fieldset>
 						<fieldset style="width:48%; float:left; margin-right: 3%;"> <!-- to make two field float next to one another, adjust values accordingly -->
-							<label>Categorie : </label>
+							<label><?php echo gettext("Catégories");?> : </label>
 							<select style="width:92%;" id=selectCat>
 								<?php
 									readCat ();
@@ -128,7 +135,7 @@ if (!isset($_SESSION))
 							</select>
 						</fieldset>
 						<fieldset style="width:48%; float:left;"> <!-- to make two field float next to one another, adjust values accordingly -->
-							<label>Tags : </label>
+							<label><?php echo gettext("Marque");?> : </label>
 							<select style="width:92%;" id="selectTag">
 								<?php
 									readTagg();
@@ -142,6 +149,7 @@ if (!isset($_SESSION))
 				</div>
 			<footer>
 				<div class="submit_link">
+					<?php echo gettext("cible"). ' :';?>
 					<select id="selectQui">
 						<option value="1000">public</option>
 						<?php
@@ -169,8 +177,9 @@ if (!isset($_SESSION))
 							}*/
 						?>
 					</select>-->
-					<input type="submit" value="Publier" class="alt_btn" onclick="addTache()">
-					<input type="submit" value="Vider" onclick="vider()">
+					
+					<input type="submit" value=<?php echo gettext("Publier");?> class="alt_btn" onclick="addTache()">
+					<input type="submit" value=<?php echo gettext("Vider");?> onclick="vider()">
 				</div>
 			</footer>
 		</article><!-- end of post new article -->
