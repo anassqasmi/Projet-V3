@@ -3,6 +3,36 @@ if (!isset($_SESSION['unom']))
 {
 	session_start();
 }
+
+function nbTache(){
+	$nb = 0;
+	
+	$xml = simplexml_load_file ( "../Ressources/Taches.xml" ) or die ( "Error: Cannot create object" );
+	
+	foreach ( $xml->children () as $tache ) {
+		if(strcmp($tache->statu, '1') != 0){
+			$nb++;
+		}
+	}
+	
+	return $nb;
+}
+
+function nbTacheDone(){
+	$nb = 0;
+
+	$xml = simplexml_load_file ( "../Ressources/Taches.xml" ) or die ( "Error: Cannot create object" );
+
+	foreach ( $xml->children () as $tache ) {
+		if(strcmp($tache->statu, '1') == 0){
+			$nb++;
+		}
+	}
+
+	return $nb;
+}
+
+
 //////////////////////////////////////// accesse to the file
 function readNotes() {
 	$xml = simplexml_load_file ( "../Ressources/note.xml" ) or die ( "Error: Cannot create object" );
@@ -141,9 +171,9 @@ function connectUser($login, $passwd) {
 }
 
 function getUserById($id) {
-	echo '<script type="text/javascript">'
-					, 'alert("le user id ' . $id . '");'
-	, '</script>';
+	//echo '<script type="text/javascript">'
+	//				, 'alert("le user id ' . $id . '");'
+	//, '</script>';
 	if(intval($id) < 501)
 	{
 		$xml = simplexml_load_file ( "../Ressources/Users.xml" ) or die ( "Error: Cannot create object" );
@@ -700,7 +730,7 @@ function readGroups() {
 }
 
 function readGroups2() {
-	$xml = simplexml_load_file ( "Ressources/Groupes2.xml" ) or die ( "Error: Cannot create object" );
+	$xml = simplexml_load_file ( "Ressourcess/Groupes2.xml" ) or die ( "Error: Cannot create object" );
 	$i = 0;
 	foreach ( $xml->children () as $tache ) {
 		$tmp[0] = $tache->attributes();

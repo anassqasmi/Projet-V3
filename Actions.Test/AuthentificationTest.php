@@ -10,7 +10,7 @@ require 'Controlor/MainControlor.php';
 class StackTest extends PHPUnit_Framework_TestCase
 {
 	
-	public function test1()
+	public function GroupesTest()
 	{
 		//$stack = array();
 		//$this->assertEquals(0, count($stack));

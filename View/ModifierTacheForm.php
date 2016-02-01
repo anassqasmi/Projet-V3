@@ -85,10 +85,10 @@ if (!isset($_SESSION))
 
 		<article class="module width_full">
 		<header>
-			<h3 class="tabs_involved">Taches Manager</h3>
+			<h3 class="tabs_involved"><?php echo gettext("Gestionnaire_des_tâches");?> :</h3>
 			<ul class="tabs">
-	   			<li><a href="#tab1">taches en cours </a></li>
-	    		<li><a href="#tab2">taches terminee</a></li>
+	   			<li><a href="#tab1"><?php echo gettext("tâches_en_cours");?></a></li>
+	    		<li><a href="#tab2"><?php echo gettext("tâches_terminée");?></a></li>
 			</ul>
 		</header>
 
@@ -98,13 +98,13 @@ if (!isset($_SESSION))
 			<thead> 
 				<tr> 
    					<th></th> 
-    				<th onclick="rectangle();">date</th> 
-    				<th onclick="rectangle();">tache</th> 
-    				<th>Categorie</th> 
-    				<th>Tage</th> 
-    				<th>cible</th> 
+    				<th onclick="rectangle();"> <?php echo gettext("Date");?></th> 
+    				<th onclick="rectangle();"> <?php echo gettext("Tâches");?> </th> 
+    				<th> <?php echo gettext("Catégories");?></th> 
+    				<th><?php echo gettext("Marque");?></th> 
+    				<th><?php echo gettext("cible");?></th> 
     				<th>Statut</th>
-    				<th>Actions</th> 
+    				<th><?php echo gettext("Action");?></th> 
 				</tr> 
 			</thead> 
 			<tbody> 
@@ -136,12 +136,12 @@ if (!isset($_SESSION))
 			<thead> 
 				<tr> 
    					<th></th> 
-    				<th onclick="rectangle();">date</th> 
-    				<th onclick="rectangle();">tache</th> 
-    				<th>Categorie</th> 
-    				<th>tage</th> 
-    				<th>cible</th> 
-    				<th>Actions</th> 
+    				<th onclick="rectangle();"> <?php echo gettext("Date");?></th> 
+    				<th onclick="rectangle();"> <?php echo gettext("Tâches");?> </th> 
+    				<th> <?php echo gettext("Catégories");?></th> 
+    				<th><?php echo gettext("Marque");?></th> 
+    				<th><?php echo gettext("cible");?></th> 
+    				<th><?php echo gettext("Action");?></th> 
 				</tr> 
 			</thead> 
 			<tbody> 
@@ -159,7 +159,7 @@ if (!isset($_SESSION))
     				<td><?php if($tache[5] != '1000') {echo getUserById($tache[5]); }else{ echo 'Public';} ?></td> 
        				<td>
     				<!-- <input type="image" src="images/icn_edit.png" title="Edit"> -->
-    				<input type="image" src="images/icn_trash.png" title="Trash"></td> 
+    				<input type="image" src="images/icn_trash.png" title="Trash" onclick="deleteTache(<?php echo $tache[0];?>)">
 				</tr> 
 				<?php }}?>
 			</tbody> 

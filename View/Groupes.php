@@ -148,16 +148,16 @@ if (! isset ( $_SESSION )) {
 
 		<article class="module width_full">
 			<header>
-				<h3 class="tabs_involved">Groupe Manager</h3>
+				<h3 class="tabs_involved"><?php echo gettext("Gestionnaire_de_Groupe");?></h3>
 				<ul class="tabs">
-					<li><a href="#tab2" onclick="showToAdd()">Nouveau Groupe +</a></li>
+					<li><a href="#tab2" onclick="showToAdd()"><?php echo gettext("Nouvelle_Groupe");?> +</a></li>
 				</ul>
 			</header>
 			<div class="module_content">
 				<div id="sel">
 					<fieldset style="width: 100%; float: left; margin-right: 3%;">
 						<!-- to make two field float next to one another, adjust values accordingly -->
-						<label>Tags : </label>
+						<label><?php echo gettext("Groupes");?> : </label>
 
 						<table border="0" style="width: 100%">
 							<tr>
@@ -181,7 +181,7 @@ if (! isset ( $_SESSION )) {
 				</div>
 				<div id="fMod1">
 					<fieldset >
-						<label>Groupe : </label>
+						<label><?php echo gettext("Groupes");?> : </label>
 						<form>
 							<input type="text" size="50%" name="cat" id="groupeNom" />
 						</form>
@@ -222,11 +222,11 @@ if (! isset ( $_SESSION )) {
 			</div>
 			<footer>
 				<div class="submit_link" >
-					<input type="submit" id="aj" value="Ajouter" onclick="AddGroupe()"
+					<input type="submit" id="aj" value=<?php echo gettext("Ajouter");?> onclick="AddGroupe()"
 						class="alt_btn">
 				</div>
 				<div class="submit_link" >
-					<input type="submit" id="mod" value="Modifier" onclick="modifierGroupe()"
+					<input type="submit" id="mod" value=<?php echo gettext("Modifier");?> onclick="modifierGroupe()"
 						class="alt_btn">
 				</div>
 			</footer>

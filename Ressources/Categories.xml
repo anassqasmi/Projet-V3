@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <categories>
+  <categorie id="2">
+    <name>tp</name>
+  </categorie>
+  <categorie id="1">
+    <name>exercice</name>
+  </categorie>
   <categorie id="9">
     <name>quiz</name>
   </categorie>
   <categorie id="2">
     <name>td</name>
-  </categorie>
-  <categorie id="1">
-    <name>exercice</name>
   </categorie>
 </categories>

@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-01-23 11:40+0100\n"
+"PO-Revision-Date: 2016-01-30 13:01+0100\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language: en_US\n"
+
+# login page
+msgid "formulaire_de_connexion"
+msgstr "Login_form"
+
+msgid "Tableau_De_Bord"
+msgstr "dashboard"
+
+msgid "inscription"
+msgstr "Sign_in"
+
+msgid "Connexion"
+msgstr "Login"
+
+msgid "nom_de_l'utilisateur"
+msgstr "User_Name"
+
+msgid "Accueil"
+msgstr "Home"
+
+msgid "Bienvenue"
+msgstr "welcome"
+
+msgid "Tâches"
+msgstr "Tasks"
+
+msgid "cacher"
+msgstr "hide"
+
+msgid "Nouvelle_Tache"
+msgstr "New_Task"
+
+msgid "Modifier_Tâches"
+msgstr "edit_Task"
+
+msgid "Catégories"
+msgstr "Categories"
+
+msgid "Marque"
+msgstr "tags"
+
+msgid "Groupes"
+msgstr "Groups"
+
+msgid "parametrage"
+msgstr "Setting"
+
+msgid "Option"
+msgstr "Option"
+
+msgid "Déconnecter"
+msgstr "disconnect"
+
+msgid "Messages"
+msgstr "Posts"
+
+msgid "A_Faire"
+msgstr "To_do"
+
+msgid "droits_d'auteur"
+msgstr "Copyrights"
+
+msgid "Gestionnaire_des_tâches"
+msgstr "‎Task_Manager"
+
+msgid "Terminé"
+msgstr "Done"
+
+msgid "Recherche_rapide"
+msgstr "Quick_Search‎"
+
+msgid "Date"
+msgstr "‎date"
+
+msgid "Vider"
+msgstr "Clean"
+
+msgid "Gestionnaire_De_Gategories"
+msgstr "Categorie_Manager"
+
+msgid "Ajouter_Marque"
+msgstr "Add_Tags"
+
+msgid "En_Cours"
+msgstr "W.I.P"
+
+msgid "Cible"
+msgstr "Target"
+
+msgid "Publier"
+msgstr "Publish"
+
+msgid "tâches_en_cours"
+msgstr "current_tasks"
+
+msgid "tâches_terminée"
+msgstr "Task_completed"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Statistique"
+msgstr "Statistics"
+
+msgid "cible"
+msgstr "Target"
+
+msgid "Ajouter"
+msgstr "Add"
+
+msgid "Nouvelle_catégorie"
+msgstr "New_Category"
+
+msgid "Nouvelle_tâche"
+msgstr "New_Task"
+
+msgid "Modifier"
+msgstr "Edit"
+
+msgid "Gestionnaire_de_Groupe"
+msgstr "Group_Manager"
+
+msgid "Nouvelle_Groupe"
+msgstr "New_Manager"
+
+msgid "Poubelle"
+msgstr "Trash"
+
+msgid "Nom"
+msgstr "Last_Name"
+
+msgid "Prenom"
+msgstr "First_Name"
+
+msgid "Email"
+msgstr "‎E_Mail"
+
+msgid "Mot_de_passe"
+msgstr "Password"
+
+msgid "valider"
+msgstr "Validate"
+
+msgid "Espace_Etudiant"
+msgstr "Studet_Area"
+

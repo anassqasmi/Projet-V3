@@ -1,9 +1,26 @@
 <?php 
 
-	if (!isset($_SESSION))
+if (!isset($_SESSION))
+{
+	session_start();
+}
+	
+	//************************language************************	//************************language************************
+	
+	if (isset($_GET['lang']))
 	{
-		session_start();
+		$language = $_GET['lang'];
+	
+	}else{
+		$language = "fr_FR";
 	}
+	putenv("LANG=".$language);
+	setlocale(LC_ALL, $language);
+	$domain = "messages";
+	bindtextdomain($domain, "../Locale");
+	textdomain($domain);
+	//************************language************************//************************language************************
+	
 
   if (($_SESSION['utype'] == 'etudiant'))	
   {
@@ -75,17 +92,44 @@
 
 	<header id="header">
 		<hgroup>
-			<h1 class="site_title"><a href="Accueil.php">Accueil</a></h1>
-			<h2 class="section_title">Tableau De Bord</h2>
+			<h1 class="site_title"><a href="Accueil.php"><?php echo gettext("Accueil"); ?></a></h1>
+			<h2 class="section_title"><?php $titre = gettext("Tableau_De_Bord"); echo $titre;?></h2>
 		</hgroup>
+		<!-- ************************language************************	//************************language************************ -->
+		<form action=<?php echo basename($_SERVER['PHP_SELF']); ?> >
+		<select name="lang" id="lang" size="1" onChange="this.form.submit()">
+		<?php if ($_GET['lang'] == "ar_AR")
+	  		echo '<option selected value="ar_AR">Arabe</option>';
+	  		else 
+	  		echo '<option value="ar_AR">Arabe</option>';
+	  	?>
+	  	<?php if ($_GET['lang'] == "fr_FR" || !isset($_GET['lang']))
+	  		echo '<option selected value="fr_FR">Francais</option>';
+	  		else 
+	  		echo '<option value="fr_FR">Francais</option>';
+	  	?>
+	  	<?php if ($_GET['lang'] == "en_US")
+	  		echo '<option selected value="en_US">Anglais</option>';
+	  		else 
+	  		echo '<option value="en_US">Anglais</option>';
+	  	?>
+	  	<?php if ($_GET['lang'] == "es_ES")
+	  		echo '<option selected value="es_ES">Espagniol</option>';
+	  		else 
+	  		echo '<option value="es_ES">Espagniol</option>';
+	  	?>
+		</select>
+	</form>
+		<!-- ************************language************************	//************************language************************ -->
+			
 	</header> <!-- end of header bar -->
 	
 	<section id="secondary_bar">
 		<div class="user">
-			<p><?php echo $_SESSION['unom'] ?> (<a href="#">3 Taches</a>)</p>
+			<p><?php echo $_SESSION['unom'] ?> (<a href="#">3 <?php echo gettext("Tâches"); ?></a>)</p>
 		</div>
 		<div class="breadcrumbs_container">
-			<article class="breadcrumbs"><a href="#"> Admin</a> <div class="breadcrumb_divider"></div> <a class="current">tableau de bord</a></article>
+			<article class="breadcrumbs"><a href="#"> Admin</a> <div class="breadcrumb_divider"></div> <a class="current"><?php echo $titre;//gettext("Tableau_De_Bord"); ?> </a></article>
 		</div>
 	</section><!-- end of secondary bar -->
 	
@@ -94,24 +138,24 @@
 			<input type="text" value="Quick Search" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;">
 		</form>
 		<hr/>
-		<h3>TACHES</h3>
+		<h3><?php echo gettext("Tâches"); ?></h3>
 		<ul class="toggle">
-			<li class="icn_new_article"><a href="ajouterTacheForm.php">Nouvelle Tache</a></li>
-			<li class="icn_edit_article"><a href="ModifierTacheForm.php">Modifier Tachs</a></li>
-			<li class="icn_categories"><a href="Categories.php">Categories</a></li>
-			<li class="icn_tags"><a href="Tags.php">Tags</a></li>
+			<li class="icn_new_article"><a href="ajouterTacheForm.php"><?php echo gettext("Nouvelle_Tache"); ?> </a></li>
+			<li class="icn_edit_article"><a href="ModifierTacheForm.php"><?php echo gettext("Modifier_Tâches"); ?></a></li>
+			<li class="icn_categories"><a href="Categories.php"><?php echo gettext("Catégories"); ?></a></li>
+			<li class="icn_tags"><a href="Tags.php"><?php echo gettext("Marque"); ?></a></li>
 		</ul>
-		<h3>Groupes</h3>
+		<h3><?php echo gettext("Groupes"); ?></h3>
 		<ul class="toggle">
 			<!-- <li class="icn_add_user"><a href="#">Add New User</a></li> -->
-			<li class="icn_view_users"><a href="Groupes.php">Groupes</a></li>
+			<li class="icn_view_users"><a href="Groupes.php"><?php echo gettext("Groupes"); ?></a></li>
 			<!-- <li class="icn_profile"><a href="#">Your Profile</a></li> -->
 		</ul>
-		<h3>Paramétrage</h3>
+		<h3><?php echo gettext("parametrage"); ?></h3>
 		<ul class="toggle">
-			<li class="icn_settings"><a href="Options.php">Options</a></li>
+			<li class="icn_settings"><a href="Options.php"><?php echo gettext("Option"); ?></a></li>
 			<!-- <li class="icn_security"><a href="#">Security</a></li>  -->
-			<li class="icn_jump_back"><a href="../Controlor/MainControlor.php?fun=dec" onclick="deco()">Déconnecter</a></li>
+			<li class="icn_jump_back"><a href="../Controlor/MainControlor.php?fun=dec" onclick="deco()"><?php echo gettext("Déconnecter"); ?></a></li>
 		</ul>
 		<h3></h3>
 		<ul class="">
@@ -127,10 +171,20 @@
 		
 		<footer>
 			<hr />
-			<p><strong>Copyright &copy; QASMI ANASS</strong></p>
+			<p><strong><?php echo gettext("droits_d'auteur"); ?> &copy; QASMI ANASS</strong></p>
 			<p>Taches Manager <a href="#"></a></p>
 			<p></p>
 		</footer>
+		<ul class="">
+			<li class=""><a href="#"></a></li>
+			<li class=""><a href="#"></a></li>
+			<li class=""><a href="#"></a></li>
+			<li class=""><a href="#"></a></li>
+			<li class=""><a href="#"></a></li>
+			<li class=""><a href="#"></a></li>
+			<li class=""><a href="#"></a></li>
+			<li class=""><a href="#"></a></li>
+		</ul> 
 	</aside><!-- end of sidebar -->
 	
 
