@@ -1,10 +1,10 @@
 <?php
 
-require 'Actions/Authentification.php';
+//require 'Actions/Authentification.php';
 
-require 'DAO/FileAccess.php';
+//require 'DAO/FileAccess.php';
 
-require 'Controlor/MainControlor.php';
+//require 'Controlor/MainControlor.php';
 
 //test class
 class StackTest extends PHPUnit_Framework_TestCase
