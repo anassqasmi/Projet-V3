@@ -804,7 +804,7 @@ function modG($id, $Gnom, $listU)
 	deleteG($id);
 	addG($Gnom, $listU);
 }
-
+//
 function loooooool()
 	{
 		return 1;
