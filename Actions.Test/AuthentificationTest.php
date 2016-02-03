@@ -44,7 +44,7 @@ public function testGroupesTest()
 		$this->assertEquals(true, testNom($nom));
 	}
 	*/
-	public function testPrenomExist()
+	public function testPrenomExist($nom)
 	{
 		$this->assertEquals(true, PrenomExist($nom));
 	}
