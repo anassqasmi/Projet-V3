@@ -816,22 +816,22 @@ function loooooool()
 		//}
 	}
 
-public function Email($id)
+function Email($id)
 {
 	return true;
 }
 	
-public function PWD($pwd)
+function PWD($pwd)
 {
 	return true;
 }
 
-public function Nom($nom)
+function Nom($nom)
 {
 	return true;
 }
 
-public function PrenomExist($nom)
+function PrenomExist($nom)
 {
 	return true;
 }
