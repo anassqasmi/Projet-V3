@@ -827,7 +827,7 @@ function checkuser($id)
 function checkFile($pwd)
 {
 	$pwd = "File.XML";
-	if (strpos($pwd, '') == false)
+	if (strpos($pwd, '.XML') == false)
 	{
     		return false;
 	}
