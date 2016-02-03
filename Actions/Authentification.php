@@ -1,4 +1,6 @@
 <?php
+// class Authentification to manage all authentifications
+
 if (! isset ( $_SESSION )) {
 	session_start ();
 }

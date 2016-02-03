@@ -1,4 +1,7 @@
 <?php 
+// manage all Groups actions(create,edit,delete), interaction 
+// with DAO
+
 if (!isset($_SESSION))
 {
 	//session_start();
