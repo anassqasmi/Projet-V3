@@ -97,4 +97,5 @@ function testfileExist()
 	return fileExist($variable);	
 }
 
+}
 ?>
