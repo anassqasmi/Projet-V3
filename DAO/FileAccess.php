@@ -860,7 +860,7 @@ function tagvir()
 function Email($id)
 {
 	$id = "1";
-	$email = "test@gmail.com;
+	$email = "test@gmail.com";
 	if (strpos($email, '@') == false)
 	{
     		return true;
