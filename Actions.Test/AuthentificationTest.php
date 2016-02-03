@@ -31,7 +31,7 @@ public function testGroupesTest()
 	
 	
 	
-	function deleteTag()
+	public function deleteTag()
 	{
 		return true;
 		//if (isset($id))
@@ -42,7 +42,7 @@ public function testGroupesTest()
 		//}
 	}
 	
-	function deleteTags($id)
+	public function deleteTags($id)
 	{
 		if (!isset($id))
 		{
