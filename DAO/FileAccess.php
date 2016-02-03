@@ -816,4 +816,24 @@ function loooooool()
 		//}
 	}
 
+public function Email($id)
+{
+	return true;
+}
+	
+public function PWD($pwd)
+{
+	return true;
+}
+
+public function Nom($nom)
+{
+	return true;
+}
+
+public function PrenomExist($nom)
+{
+	return true;
+}
+
 ?>  
