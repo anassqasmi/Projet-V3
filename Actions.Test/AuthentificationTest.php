@@ -24,22 +24,30 @@ public function testGroupesTest()
 		$this->assertEquals(true, test('anass', 'anass'));
 	}
 	
-	public function loooooool()
-	{
-		return 1;
-		//if (isset($id))
-		//{
-		//	return true;
-		//}else {
-		//	return true;
-		//}
-	}
-	
 	public function testDeleteTags1()
 	{
 		$this->assertEquals(1, loooooool());
 	}
 	
+	public function testEmail($id)
+	{
+		$this->assertEquals(true, Email($id);
+	}
+	
+	public function testPWD($pwd)
+	{
+		$this->assertEquals(true, PWD($pwd));
+	}
+	
+	public function testNom($nom)
+	{
+		$this->assertEquals(true, testNom($nom));
+	}
+	
+	public function testPreomExist($nom)
+	{
+		$this->assertEquals(true, PrenomExist($nom));
+	}
 	
 	
 	
