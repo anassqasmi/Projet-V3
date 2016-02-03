@@ -35,7 +35,7 @@ public function testGroupesTest()
 	{
 		if (isset($id))
 		{
-			return deleteTagg($id);
+			return true;
 		}else {
 			return false;
 		}
