@@ -820,7 +820,7 @@ function difTag()
 
 function checkuser($id)
 {
-	$
+	
 	return true;
 }
 	
