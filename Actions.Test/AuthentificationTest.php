@@ -8,7 +8,7 @@ require 'Controlor/MainControlor.php';
 
 //$_POST['id'] = "1";
 //$_POST['nom'] = "2";
-
+$nom = "anass";
 //test class
 class StackTest extends PHPUnit_Framework_TestCase
 {
@@ -44,7 +44,7 @@ public function testGroupesTest()
 		$this->assertEquals(true, testNom($nom));
 	}
 	*/
-	public function testPrenomExist($nom)
+	public function testPrenomExist()
 	{
 		$this->assertEquals(true, PrenomExist($nom));
 	}
