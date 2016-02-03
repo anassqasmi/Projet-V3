@@ -806,7 +806,7 @@ function Nom($nom)
 {
 	$id = "anass";
 	if(preg_match('/[a-z]/', $pwd)){
- 		return true
+ 		return true;
 	}
 	return false;
 }
@@ -816,7 +816,7 @@ function PrenomExist($nom)
 
 	$id = "anass";
 	if(preg_match('/[a-z]/', $pwd)){
- 		return true
+ 		return true;
 	}
 	return false;
 }
@@ -831,7 +831,7 @@ function checkuser($id)
 {
 	$id = "anass";
 	if(preg_match('/[a-z]/', $pwd)){
- 		return true
+ 		return true;
 	}
 	return false;
 }
