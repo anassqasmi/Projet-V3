@@ -10,7 +10,7 @@ before_script:
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
 
-script: sudo phpunit ./Actions.Test/
+script: phpunit ./Actions.Test/
 
 matrix:
   allow_failures:
