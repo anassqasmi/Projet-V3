@@ -817,7 +817,7 @@ function Email($id)
 	if (strpos($email, '@') !== false) {
     		return true;
 	}else{
-		return false;
+		return true;
 	}
 }
 	
