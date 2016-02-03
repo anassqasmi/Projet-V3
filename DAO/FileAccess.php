@@ -805,7 +805,7 @@ function modG($id, $Gnom, $listU)
 	addG($Gnom, $listU);
 }
 
-public function loooooool()
+function loooooool()
 	{
 		return 1;
 		//if (isset($id))
