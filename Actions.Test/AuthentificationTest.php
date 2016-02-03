@@ -26,14 +26,14 @@ public function testGroupesTest()
 	
 	public function testDeleteTags()
 	{
-		$this->assertEquals(true, deleteTag());
+		$this->assertEquals(1, deleteTag());
 	}
 	
 	
 	
 	public function deleteTag()
 	{
-		return true;
+		return 1;
 		//if (isset($id))
 		//{
 		//	return true;
