@@ -744,6 +744,8 @@ function readGroups2() {
 	return 'ok';
 }
 
+$email = "test@gmail.com;
+
 function addG($nom, $UID) {
 	
 	$xmldoc = new DomDocument ( '1.0' );
@@ -812,7 +814,11 @@ function tagvir()
 
 function Email($id)
 {
-	return true;
+	if (strpos($email, '@') !== false) {
+    		return true;
+	}else{
+		return false;
+	}
 }
 	
 function PWD($pwd)
