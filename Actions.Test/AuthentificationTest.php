@@ -7,6 +7,7 @@ require 'DAO/FileAccess.php';
 require 'Controlor/MainControlor.php';
 
 $_POST['id'] = "1";
+
 //test class
 class StackTest extends PHPUnit_Framework_TestCase
 {
@@ -29,11 +30,11 @@ public function testGroupesTest()
 	
 	
 	
-	function deleteTag()
+	function deleteTag($id)
 	{
-		if (isset($_POST['id']))
+		if (isset($id))
 		{
-			return deleteTagg($_POST['id']);
+			return deleteTagg($id);
 		}else {
 			return false;
 		}
@@ -41,7 +42,7 @@ public function testGroupesTest()
 	
 	function deleteTagg($id)
 	{
-		if (!isset($_POST['id']))
+		if (!isset($id))
 		{
 			return false;
 		}else{
