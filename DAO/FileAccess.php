@@ -744,7 +744,7 @@ function readGroups2() {
 	return 'ok';
 }
 
-$email = "test@gmail.com;
+
 
 function addG($nom, $UID) {
 	
@@ -814,6 +814,8 @@ function tagvir()
 
 function Email($id)
 {
+	$id = "1";
+	$email = "test@gmail.com;
 	if (strpos($email, '@') !== false) {
     		return true;
 	}else{
