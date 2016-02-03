@@ -804,24 +804,36 @@ function PWD($pwd)
 
 function Nom($nom)
 {
-	return true;
+	$id = "anass";
+	if(preg_match('/[a-z]/', $pwd)){
+ 		return true
+	}
+	return false;
 }
 
 function PrenomExist($nom)
 {
 
-	return true;
+	$id = "anass";
+	if(preg_match('/[a-z]/', $pwd)){
+ 		return true
+	}
+	return false;
 }
 ///////////////////
 function difTag()
 {
+	
 	return 1;
 }
 
 function checkuser($id)
 {
-	
-	return true;
+	$id = "anass";
+	if(preg_match('/[a-z]/', $pwd)){
+ 		return true
+	}
+	return false;
 }
 	
 function checkFile($pwd)
