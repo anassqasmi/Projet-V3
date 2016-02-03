@@ -24,13 +24,6 @@ public function testGroupesTest()
 		$this->assertEquals(true, test('anass', 'anass'));
 	}
 	
-	public function testDeleteTags1()
-	{
-		$this->assertEquals(1, loooooool());
-	}
-	
-	
-	
 	public function loooooool()
 	{
 		return 1;
@@ -41,6 +34,15 @@ public function testGroupesTest()
 		//	return true;
 		//}
 	}
+	
+	public function testDeleteTags1()
+	{
+		$this->assertEquals(1, loooooool());
+	}
+	
+	
+	
+	
 	
 	/*public function deleteTags($id)
 	{
