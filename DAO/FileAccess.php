@@ -863,7 +863,7 @@ function Email($id)
 	$email = "test@gmail.com";
 	if (strpos($email, '@') == false)
 	{
-    		return true;
+    		return false;
 	}
 	else
 	{
