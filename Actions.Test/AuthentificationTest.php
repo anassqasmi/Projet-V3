@@ -37,7 +37,7 @@ public function testGroupesTest()
 		{
 			return true;
 		}else {
-			return false;
+			return true;
 		}
 	}
 	
