@@ -805,4 +805,15 @@ function modG($id, $Gnom, $listU)
 	addG($Gnom, $listU);
 }
 
+public function loooooool()
+	{
+		return 1;
+		//if (isset($id))
+		//{
+		//	return true;
+		//}else {
+		//	return true;
+		//}
+	}
+
 ?>  
