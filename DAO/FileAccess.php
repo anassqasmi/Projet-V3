@@ -791,8 +791,15 @@ function addG($nom, $UID) {
 
 function PWD($pwd)
 {
-	$pwd = "test";
-	return true;
+	$pwd = "asASA199";
+	if(preg_match('/[A-Z]/', $pwd)){
+ 		
+ 		if(preg_match('/[1-9]/', $pwd)){
+			return true;
+		}
+	}
+	return false;
+	
 }
 
 function Nom($nom)
@@ -813,22 +820,41 @@ function difTag()
 
 function checkuser($id)
 {
+	$
 	return true;
 }
 	
 function checkFile($pwd)
 {
+	$pwd = "File.XML";
+	if (strpos($pwd, '') == false)
+	{
+    		return false;
+	}
+	else
+	{
+		return true;
+	}
 	return true;
 }
 
 function virLog($nom)
 {
+	
 	return true;
 }
 
 function fileExist($nom)
 {
-
+	$nom = "File.XML";
+	if (strpos($nom, '.XML') == false)
+	{
+    		return false;
+	}
+	else
+	{
+		return true;
+	}
 	return true;
 }
 
