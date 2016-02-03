@@ -33,15 +33,16 @@ public function testGroupesTest()
 	
 	function deleteTag($id)
 	{
-		if (isset($id))
-		{
-			return true;
-		}else {
-			return true;
-		}
+		return true;
+		//if (isset($id))
+		//{
+		//	return true;
+		//}else {
+		//	return true;
+		//}
 	}
 	
-	function deleteTagg($id)
+	function deleteTags($id)
 	{
 		if (!isset($id))
 		{
