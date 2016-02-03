@@ -6,8 +6,8 @@ require 'DAO/FileAccess.php';
 
 require 'Controlor/MainControlor.php';
 
-$_POST['id'] = "1";
-$_POST['nom'] = "2";
+//$_POST['id'] = "1";
+//$_POST['nom'] = "2";
 
 //test class
 class StackTest extends PHPUnit_Framework_TestCase
@@ -26,12 +26,12 @@ public function testGroupesTest()
 	
 	public function testDeleteTags()
 	{
-		$this->assertEquals(true, deleteTag($_POST['id']));
+		$this->assertEquals(true, deleteTag());
 	}
 	
 	
 	
-	function deleteTag($id)
+	function deleteTag()
 	{
 		return true;
 		//if (isset($id))
