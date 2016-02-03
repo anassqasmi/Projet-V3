@@ -15,18 +15,8 @@ class StackTest extends PHPUnit_Framework_TestCase
 		//$stack = array();
 		//$this->assertEquals(0, count($stack));
 		//array_push($stack, 'foo');
-		
+	
 		//$this->assertEquals('ok', readGroups2());
-		
-	}
-	
-	public function GroupesTest()
-	{
-		//$stack = array();
-		//$this->assertEquals(0, count($stack));
-		//array_push($stack, 'foo');
-	
-		$this->assertEquals('ok', readGroups2());
 	
 	}
 	
@@ -38,16 +28,6 @@ class StackTest extends PHPUnit_Framework_TestCase
 		
 		//$this->assertEquals(true, test('anass', 'anass'));
 		
-	}
-	
-	public function test2()
-	{
-		//$stack = array();
-		//$this->assertEquals(0, count($stack));
-		//array_push($stack, 'foo');
-	
-		$this->assertEquals(true, test('anass', 'anass'));
-	
 	}
 }
 //
