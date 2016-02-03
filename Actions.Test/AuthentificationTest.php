@@ -29,7 +29,7 @@ public function testGroupesTest()
 		$this->assertEquals(1, loooooool());
 	}
 	
-	public function testEmail($id)
+	/*public function testEmail($id)
 	{
 		//$this->assertEquals(true, Email($id));
 	}
@@ -48,7 +48,7 @@ public function testGroupesTest()
 	{
 		$this->assertEquals(true, PrenomExist($nom));
 	}
-	
+	*/
 	
 	
 	
