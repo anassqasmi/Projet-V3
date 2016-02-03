@@ -1,4 +1,7 @@
 <?php 
+
+// this class play the rull of a controler, can send commands to // the model to update the model's state (e.g., editing a //document). It can also send commands to its associated view to //change the view's presentation of the model (e.g., by //scrolling through a document).
+
 if (!isset($_SESSION))
   {
   	session_start();
