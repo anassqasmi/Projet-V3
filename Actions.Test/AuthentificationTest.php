@@ -26,24 +26,27 @@ public function testGroupesTest()
 	
 	public function testDeleteTags1()
 	{
-		$this->assertEquals(1, loooooool());
+		$this->assertEquals(1, tagvir());
 	}
 	
-	/*public function testEmail($id)
+	public function testEmail()
 	{
-		//$this->assertEquals(true, Email($id));
+		$id = "anass@gmail.com"
+		$this->assertEquals(true, Email($id));
 	}
 	
-	public function testPWD($pwd)
+	public function testPWD()
 	{
+		$pwd = "9817dfsSS3";
 		$this->assertEquals(true, PWD($pwd));
 	}
 	
-	public function testNom($nom)
+	public function testNom()
 	{
+		$nom = "Boukaibat";
 		$this->assertEquals(true, testNom($nom));
 	}
-	*/
+	
 	public function testPrenomExist()
 	{
 		$nom = "anass";
@@ -62,6 +65,36 @@ public function testGroupesTest()
 			return true;
 		}
 	}*/
+	
+	
+function testdifTag()
+{
+	$tag = "exist";
+	return difTag($tag);
+}
+
+function testcheckuser()
+{
+	$id = "123";
+	return checkuser($id);
+}
+	
+function testcheckFile()
+{
+	$filename = "DAOFile";
+	return checkFile($filename);
+}
+
+function testvirLog()
+{
+	$nom = "log";
+	return virLog($nom);
+}
+
+function testfileExist()
+{
+	$variable = "File";
+	return fileExist($variable);	
 }
 
 ?>
