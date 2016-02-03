@@ -1,4 +1,5 @@
 <?php 
+// THIS Class is an object that provides an abstract interface //and persistence mechanism
 if (!isset($_SESSION['unom']))
 {
 	session_start();
