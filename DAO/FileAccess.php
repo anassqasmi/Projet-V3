@@ -788,43 +788,10 @@ function addG($nom, $UID) {
 	}
 }
 
-function deleteG($old)
-{
-	$xml = simplexml_load_file("../Ressources/Groupes.xml");
-	for($i = 0, $length = count($xml->Groupe); $i < $length; $i++){
-		if($xml->Groupe[$i]->attributes()."" == $old."" ){
-			unset($xml->Groupe[$i]);
-			break;
-		}
-	}
-	
-	$xml->asXML('../Ressources/Groupes.xml');
-}
 
-function modG($id, $Gnom, $listU)
-{
-	deleteG($id);
-	addG($Gnom, $listU);
-}
-//
-function tagvir()
-{
-	return 1;
-}
-
-function Email($id)
-{
-	$id = "1";
-	$email = "test@gmail.com;
-	if (strpos($email, '@') !== false) {
-    		return true;
-	}else{
-		return true;
-	}
-}
-	
 function PWD($pwd)
 {
+	$pwd = "test";
 	return true;
 }
 
@@ -866,6 +833,42 @@ function fileExist($nom)
 }
 
 
+function deleteG($old)
+{
+	$xml = simplexml_load_file("../Ressources/Groupes.xml");
+	for($i = 0, $length = count($xml->Groupe); $i < $length; $i++){
+		if($xml->Groupe[$i]->attributes()."" == $old."" ){
+			unset($xml->Groupe[$i]);
+			break;
+		}
+	}
+	
+	$xml->asXML('../Ressources/Groupes.xml');
+}
 
+function modG($id, $Gnom, $listU)
+{
+	deleteG($id);
+	addG($Gnom, $listU);
+}
+
+function tagvir()
+{
+	return 1;
+}
+
+function Email($id)
+{
+	$id = "1";
+	$email = "test@gmail.com;
+	if (strpos($email, '@') == false)
+	{
+    		return true;
+	}
+	else
+	{
+		return true;
+	}
+}
 
 ?>  
