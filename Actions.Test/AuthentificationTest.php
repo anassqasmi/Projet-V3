@@ -43,12 +43,12 @@ public function testGroupesTest()
 	{
 		$this->assertEquals(true, testNom($nom));
 	}
-	
+	*/
 	public function testPreomExist($nom)
 	{
 		$this->assertEquals(true, PrenomExist($nom));
 	}
-	*/
+	
 	
 	
 	
