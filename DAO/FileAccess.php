@@ -805,16 +805,10 @@ function modG($id, $Gnom, $listU)
 	addG($Gnom, $listU);
 }
 //
-function loooooool()
-	{
-		return 1;
-		//if (isset($id))
-		//{
-		//	return true;
-		//}else {
-		//	return true;
-		//}
-	}
+function tagvir()
+{
+	return 1;
+}
 
 function Email($id)
 {
@@ -836,5 +830,34 @@ function PrenomExist($nom)
 
 	return true;
 }
+///////////////////
+function difTag()
+{
+	return 1;
+}
+
+function checkuser($id)
+{
+	return true;
+}
+	
+function checkFile($pwd)
+{
+	return true;
+}
+
+function virLog($nom)
+{
+	return true;
+}
+
+function fileExist($nom)
+{
+
+	return true;
+}
+
+
+
 
 ?>  
