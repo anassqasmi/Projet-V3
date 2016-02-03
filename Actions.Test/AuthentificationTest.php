@@ -31,7 +31,7 @@ public function testGroupesTest()
 	
 	public function testEmail()
 	{
-		$id = "anass@gmail.com"
+		$id = "anass@gmail.com";
 		$this->assertEquals(true, Email($id));
 	}
 	
