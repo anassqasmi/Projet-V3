@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <taches>
-  <tache id="5">
+  <tache id="6">
     <date>2016-01-30</date>
-    <contenu>34</contenu>
+    <contenu>dfdf</contenu>
     <categorie>quiz</categorie>
     <tag>tag1</tag>
-    <cible>1000</cible>
-    <statu>0</statu>
+    <cible>2</cible>
+    <statu>1</statu>
   </tache>
-  
   <tache id="5">
     <date>2016-01-21</date>
     <contenu>dcncncio</contenu>
